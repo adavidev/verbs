@@ -34,6 +34,7 @@ Verbs::Conjugator.conjugations do |conjugate|
 
   # http://cpansearch.perl.org/src/RWG/Lingua-EN-Conjugate-0.308/lib/Lingua/EN/Conjugate.pm
   conjugate.irregular :awake, :awoke, :awoken
+  conjugate.irregular :is, :was, :was
   conjugate.irregular :bear, :bore, :born
   conjugate.irregular :beat, :beat, :beat
   conjugate.irregular :become, :became, :become
@@ -65,7 +66,7 @@ Verbs::Conjugator.conjugations do |conjugate|
   conjugate.irregular :deal, :dealt, :dealt
   conjugate.irregular :dig, :dug, :dug
   conjugate.irregular :dive, :dove, :dived
-  conjugate.irregular 'do', :did, :done
+  conjugate.irregular :'do', :did, :done
   conjugate.irregular :draw, :drew, :drawn
   conjugate.irregular :dream, :dreamed, :dreamed
   conjugate.irregular :drive, :drove, :driven
