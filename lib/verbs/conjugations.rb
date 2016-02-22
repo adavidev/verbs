@@ -1,6 +1,6 @@
 Verbs::Conjugator.conjugations do |conjugate|
 
-  conjugate.irregular :be do |verb| # copular 
+  conjugate.irregular :be do |verb| # copular
     verb.form :am,    :tense => :present, :person => :first,  :plurality => :singular
     verb.form :is,    :tense => :present, :person => :third,  :plurality => :singular
     verb.form :are,   :tense => :present, :person => :second, :plurality => :singular
@@ -17,7 +17,7 @@ Verbs::Conjugator.conjugations do |conjugate|
     verb.form :been,  :tense => :past,    :derivative => :participle
   end
 
-  conjugate.irregular :have do |verb| 
+  conjugate.irregular :have do |verb|
     verb.form :have,   :tense => :present, :person => :first,  :plurality => :singular
     verb.form :has,    :tense => :present, :person => :third,  :plurality => :singular
     verb.form :have,   :tense => :present, :person => :second, :plurality => :singular
@@ -33,8 +33,19 @@ Verbs::Conjugator.conjugations do |conjugate|
   end
 
   # http://cpansearch.perl.org/src/RWG/Lingua-EN-Conjugate-0.308/lib/Lingua/EN/Conjugate.pm
+  # args - infinitive, preterite = nil, past_participle = nil
   conjugate.irregular :awake, :awoke, :awoken
   conjugate.irregular :is, :was, :was
+  conjugate.irregular :am, :was, :was
+  conjugate.irregular :wants, :wanted, :wanted
+  conjugate.irregular :says, :said, :saying
+  conjugate.irregular :laugh, :laughed, :laughing
+  conjugate.irregular :are, :were, :were
+  conjugate.irregular :feel, :felt, :felt
+  conjugate.irregular :feels, :felt, :felt
+  conjugate.irregular :bang, :banged, :banged
+  conjugate.irregular :will, :'would have', :'would have'
+  conjugate.irregular :has, :had, :had
   conjugate.irregular :bear, :bore, :born
   conjugate.irregular :beat, :beat, :beat
   conjugate.irregular :become, :became, :become
@@ -183,7 +194,7 @@ Verbs::Conjugator.conjugations do |conjugate|
   conjugate.irregular :strive, :strove, :striven
   conjugate.irregular :swear, :swore, :sworn
   conjugate.irregular :sweep, :swept, :swept
-  conjugate.irregular :swell, :swelled, :swelled 
+  conjugate.irregular :swell, :swelled, :swelled
   conjugate.irregular :swim, :swam, :swum
   conjugate.irregular :swing, :swung, :swung
   conjugate.irregular :take, :took, :taken
